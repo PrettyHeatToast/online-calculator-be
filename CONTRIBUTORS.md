@@ -7,3 +7,4 @@
 > Add your name here if you contributed to this project
 
 [6a6ak](https://github.com/6a6ak)
+[PrettyHeatToast](https://github.com/PrettyHeatToast)

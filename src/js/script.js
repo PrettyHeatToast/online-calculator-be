@@ -19,7 +19,7 @@ function appendOperator(op) {
     handleSpecialCases();
     lastChar = expression.charAt(expression.length - 1);
 
-    if (lastChar !== '+' && lastChar !== '-' && lastChar !== '×' && lastChar !== '÷' && lastChar !== '.') {
+    if (lastChar !== '+' && lastChar !== '-' && lastChar !== '×' && lastChar !== '÷' && lastChar !== ',') {
         expression += op;
         display.value = expression;
     }
@@ -32,9 +32,9 @@ function appendDecimal() {
     handleSpecialCases();
     lastChar = expression.charAt(expression.length - 1);
 
-    if (lastChar !== '+' && lastChar !== '-' && lastChar !== '×' && lastChar !== '÷' && lastChar !== '.') {
+    if (lastChar !== '+' && lastChar !== '-' && lastChar !== '×' && lastChar !== '÷' && lastChar !== ',') {
         if (expression !== '') {
-            expression += '.';
+            expression += ',';
             display.value = expression;
         }
     }
@@ -94,9 +94,9 @@ function handleSpecialCases() {
  */
 function calculate() {
     try {
-        let modifiedExpression = expression.replace(/×/g, '*').replace(/÷/g, '/');
+        let modifiedExpression = expression.replace(/×/g, '*').replace(/÷/g, '/').replace(/,/g, '.');
         let result = eval(modifiedExpression);
-        expression = result.toString();
+        expression = result.toString().replace('.', ',');
         display.value = expression;
     } catch (error) {
         expression = 'Error';

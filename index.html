@@ -16,8 +16,8 @@
             <input type="text" id="display" disabled>
             <div class="buttons">
                 <!-- First line -->
-                <button class="clear" colspan="2" onclick="clearDisplay()">C</button>
-                <button class="delete" colspan="2" onclick="deleteLast()">D</button>
+                <button class="clear" colspan="2" onclick="clearDisplay()">Clear</button>
+                <button class="delete" colspan="2" onclick="deleteLast()">Delete</button>
 
                 <!-- Second line -->
                 <button onclick="appendNumber(7)">7</button>
@@ -39,7 +39,7 @@
 
                 <!-- Fifth line -->
                 <button class="zero" colspan="2" onclick="appendNumber(0)">0</button>
-                <button onclick="appendDecimal()">.</button>
+                <button onclick="appendDecimal()">,</button>
                 <button class="operator" onclick="appendOperator('÷')">÷</button>
 
                 <!-- Sixth line -->
