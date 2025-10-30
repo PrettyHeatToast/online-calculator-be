@@ -1,6 +1,7 @@
 <h1 align="center">ONLINE CALCULATOR</h1>
 
-![screenshot](https://github.com/timotheeMM/online-calculator/assets/143833750/5fa8e007-ae31-48bc-9910-0398d5fe4933)
+<img width="599" height="792" alt="image" src="https://github.com/user-attachments/assets/c5944f96-361e-4b8a-913a-f8bbb2c1fd6f" />
+
 
 ## What is this project ?
 
